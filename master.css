@@ -1,1 +1,7 @@
-#title{color: rgb(189, 76, 78); display: inline-block;}
+#title{font-size: 60px;color: rgb(248, 248, 248); display: flex; background-color: darkgoldenrod; background-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 10px;}
+
+#answerbox {background-color: darkgoldenrod; font-size: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 10px;}
+
+#nextquestion {
+    font-size: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
