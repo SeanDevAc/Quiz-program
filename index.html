@@ -8,6 +8,17 @@
 </head>
 <body>
     <h1 id="title">Seans en Lucio's Quiz</h1>
+    <a id="ziecollecties" href="#"><h2>Welkom, zie collecties aan quizes</h2></a>
+
+    <div id="quizlist" style="display: none;">
+        <div class="listItem">oorlogsquiz</div>
+        <div class="listItem">uitvindersquiz</div>
+        <div class="listItem">kookquiz</div>
+        <div class="listItem">rapperquiz</div>
+        <div class="listItem">gamesquiz</div>
+    </div>
+
+    <section id="questions" style="display: none;">
     <p></p>
     <input type="text" placeholder="Antwoord" id="answerbox">
     <link rel="manifest" href="manifest.json">
@@ -15,6 +26,8 @@
     <input type="file" id="fileInput" accept=".txt">
     <button id="loadQuestions">Laad Vragen</button>
     <div id="questionsContainer"></div>
+</section>
 </body>
+<script src="luciosgedeelte.js"></script>
 <script src="main.js"></script> 
 </html>
