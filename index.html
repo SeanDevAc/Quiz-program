@@ -22,31 +22,30 @@
                 <button>Over ons</button>
             </div>
 
-            <!-- list of quizzes -->
             <div class="quizList" id="quizlist">
-                <div class="listItem" id="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>  
+                <div class="listItem" id="oorlog"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem" id="cultuur"><div class="text">Cultuur</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem" id="media"><div class="text">Media</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem" id="anime"><div class="text">Anime</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem" id="films"><div class="text">Films</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>  
             </div>
-        </div>
+            
+            <div id="quizContainer" style="visibility: hidden;">
+                <div class="questionContainer">
+                    <section id="questions">
+                        <p id="questionText">Lorem Ipsum question</p>
+                    </section>
+                </div>
+                <div class="answerContainer">
+                    <input type="text" placeholder="Antwoord" id="answerbox">
+                </div>
+                <div class="navContainer">
+                    <button id="previousQuestion">Terug</button>
+                    <button id="nextQuestion">Volgende</button>
+                </div>
+            </div>
+            
 
-        <!-- TODO questions -->
-        <div id="quizContainer">
-            <div class="questionContainer">
-                <section id="questions">
-                    <p>Lorem Ipsum question</p>
-            </div>
-            <div class="answerContainer">
-                <input type="text" placeholder="Antwoord" id="answerbox">
-                <link rel="manifest" href="manifest.json">
-            </div>
-            <div class="navContainer">
-                <button id="previousQuestion">Terug</button>
-                <button id="nextQuestion">Volgende</button>
-            </div>
-        </div>
     </div>
 </section>
 </body>
