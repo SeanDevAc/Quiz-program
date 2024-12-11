@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
-    position:absolute;
+    position:fixed;
 }
 
 .viewBox{
