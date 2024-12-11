@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-program</title>
     <link rel="stylesheet" href="master.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=forward" />
 </head>
 <body>
@@ -34,18 +35,23 @@
 
         <!-- TODO questions -->
         <div id="quizContainer">
-            <div class="questionContainer">
+            <div id="question"></div>
+            <input type="text" id="answerInput" placeholder="Vul je antwoord in" />
+            <button onclick="checkAnswer()">Controleer Antwoord</button>
+            <div id="result"></div>
+            <!-- <div class="questionContainer">
                 <section id="questions">
                     <p>Lorem Ipsum question</p>
+                    <div id="quizContainer"></div>
+
             </div>
             <div class="answerContainer">
                 <input type="text" placeholder="Antwoord" id="answerbox">
-                <link rel="manifest" href="manifest.json">
             </div>
             <div class="navContainer">
                 <button id="previousQuestion">Terug</button>
                 <button id="nextQuestion">Volgende</button>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
