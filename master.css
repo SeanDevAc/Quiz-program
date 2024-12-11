@@ -65,6 +65,8 @@ h1{
 
 .quizList{
     display:flex;
+    flex-direction: column;
+    width: 20vw;
 }
 
 
@@ -96,6 +98,36 @@ h1{
     color: darkgoldenrod;
 }
 
+.mainContent{
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.introText{
+    width: 30vw;
+}
+
+.introText button {
+    background-color: var(--white);
+    border-style: none;
+    border-color: none;
+    color: black;
+    min-width: 44px;
+    min-height: 44px;
+    width: 7em;
+    height: 3em;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.introText button:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
 
 /* #quizlist {
     background-color: darkgoldenrod; padding: 4px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40px; bottom: 17.5%; position: absolute; color: aliceblue; border-radius: 10px; border: 4px black;
@@ -104,11 +136,27 @@ h1{
 .listItem {
     cursor: pointer;
     padding: 10px;
-    background-color: var(--opacityWhite);
+    background-color: var(--backgroundGreen);
     border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    margin: 0.25em;
+    justify-content: center;
+    gap:10vw;
+    transition: 0.3s;
 }
 
 .listItem:hover {
-    color: #feb642
+    background-color: var(--opacityWhite);
+    color: black;
 }
+
+.listItem .text{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* .listItem:hover {
+    color: #feb642
+} */
 
