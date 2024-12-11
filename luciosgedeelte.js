@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const quizList = document.querySelectorAll('.listItem');
+    const listItems = document.querySelectorAll('.listItem');
     const quizContainer = document.getElementById('quizContainer');
     const questionText = document.getElementById('questionText');
+    const introText = document.getElementsByClassName("introText")
+    const quizList = document.getElementsByClassName("quizList")
 
-    quizList.forEach(item => {
+    listItems.forEach(item => {
         item.addEventListener('click', async () => {
             const category = item.id; // Get the ID of the clicked category (e.g., 'oorlog')
             const csvFile = `${category}.csv`; // Construct the file name
@@ -12,7 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (questions.length > 0) {
                 questionText.textContent = questions[0].question; // Display the first question
                 quizContainer.style.visibility = 'visible'; // Show the quiz container
-            } else {
+                if (introText.length > 0) introText[0].style.display = 'none'; 
+                if (quizList.length > 0) quizList[0].style.display = 'none';
+            } 
+            else {
                 alert('No questions available for this category.');
             }
         });
