@@ -5,27 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-program</title>
     <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=forward" />
 </head>
 <body>
-    <h1 id="title">Seans en Lucio's Quiz</h1>
-    <a id="ziecollecties" href="#"><h2>Welkom, zie collecties aan quizes</h2></a>
+    <div class="viewBox">
 
-    <div id="quizlist" style="display: none;">
-        <div class="listItem">oorlogsquiz</div>
-        <div class="listItem">uitvindersquiz</div>
-        <div class="listItem">kookquiz</div>
-        <div class="listItem">rapperquiz</div>
-        <div class="listItem">gamesquiz</div>
+        <!-- navigation -->
+        <div class="topNav">
+            <h1>Quizpage</h1>
+        </div>
+
+        <div class="mainContent">
+            <div class="introText">
+                <h2>Welkom bij de Quizpage van Lucio en Sean</h2>
+                <p>Bij deze quizpage gaan wij verschillende onderwerpen doornemen om je algemene kennis zo goed mogelijk te testen! Probeer het goed te doen, maar vergeet geen plezier te hebben.</p>
+                <button>Over ons</button>
+            </div>
+
+            <!-- list of quizzes -->
+            <div class="quizList" id="quizlist">
+                <div class="listItem" id="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
+                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>  
+            </div>
+        </div>
+
+        <!-- TODO questions -->
+        <div id="quizContainer">
+            <div class="questionContainer">
+                <section id="questions">
+                    <p>Lorem Ipsum question</p>
+            </div>
+            <div class="answerContainer">
+                <input type="text" placeholder="Antwoord" id="answerbox">
+                <link rel="manifest" href="manifest.json">
+            </div>
+            <div class="navContainer">
+                <button id="previousQuestion">Terug</button>
+                <button id="nextQuestion">Volgende</button>
+            </div>
+        </div>
     </div>
-
-    <section id="questions" style="display: none;">
-    <p></p>
-    <input type="text" placeholder="Antwoord" id="answerbox">
-    <link rel="manifest" href="manifest.json">
-    <button id="nextquestion">Volgende Vraag</button>
-    <input type="file" id="fileInput" accept=".txt">
-    <button id="loadQuestions">Laad Vragen</button>
-    <div id="questionsContainer"></div>
 </section>
 </body>
 <script src="luciosgedeelte.js"></script>

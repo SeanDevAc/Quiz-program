@@ -1,7 +1,76 @@
 
-body {
-    justify-content: center; align-items: center;  background-image: url('img/sunset-8113697_1920.jpg'); background-size: cover; background-position: bottom; display:flex; height: 100vh; margin: 0; animation: moveBackground 60s linear infinite;
+:root{
+    --green: #142328;
+    --backgroundGreen: rgb(20,35,40,0.6);
+    --white: #FFFFFF;
+    --opacityWhite: rgba(255, 255, 255, 0.6);
 }
+
+body {
+    /* justify-content: center; align-items: center;  background-image: url('img/sunset-8113697_1920.jpg'); background-size: cover; background-position: bottom; display:flex; height: 100vh; margin: 0; animation: moveBackground 60s linear infinite;
+     */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    position:absolute;
+}
+
+.viewBox{
+    display: flex;
+    background-color: var(--backgroundGreen);
+    margin: 5em;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    height: auto;
+    border-radius: 15px;
+    min-height: 50vh;
+}
+
+/* .backgroundOverlay{
+    opacity: 100%;
+} */
+
+p, h1, h2, h3, .listItem{
+    color: var(--white);
+    opacity: 100%;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+.title{
+    display: flex;
+}
+
+.topNav{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.topNav h1{
+    display:flex;
+}
+
+.quizList{
+    display:flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+
 
 @keyframes moveBackground {
     0% {
@@ -12,47 +81,83 @@ body {
     }
 }
 
-/*
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
-}
-    */
 
+/* #title{font-size: 60px;color: rgb(248, 248, 248); display: inline-flex; background-color: darkgoldenrod; background-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 10px; padding: 10px; position: absolute; top: 1%} */
 
-#title{font-size: 60px;color: rgb(248, 248, 248); display: inline-flex; background-color: darkgoldenrod; background-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 10px; padding: 10px; position: absolute; top: 1%}
-
-#answerbox {background-color: darkgoldenrod; font-size: 60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 10px; padding: 10px; background-size: 20px; position: relative; display: inline-flex; width: 300px; text-align: center;}
+/* #answerbox {background-color: darkgoldenrod; font-size: 60px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-radius: 10px; padding: 10px; background-size: 20px; position: relative; display: inline-flex; width: 300px; text-align: center;} */
 
 #nextquestion {
     font-size: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#ziecollecties {
+/* #ziecollecties {
     text-decoration: none; color: aliceblue; font-size: 30px; transition: 0.5s; text-shadow: 
-    0 0 5px rgba(0, 0, 0, 0.5); /* Single soft shadow */
-}
+    0 0 5px rgba(0, 0, 0, 0.5); Single soft shadow 
+} */
 
 #ziecollecties:hover {
     color: darkgoldenrod;
 }
 
-
-#quizlist {
-    background-color: darkgoldenrod; padding: 4px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40px; bottom: 17.5%; position: absolute; color: aliceblue; border-radius: 10px; border: 4px black;
+.mainContent{
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
 }
+
+.introText{
+    width: 30vw;
+}
+
+.introText button {
+    background-color: var(--white);
+    border-style: none;
+    border-color: none;
+    color: black;
+    min-width: 44px;
+    min-height: 44px;
+    width: 7em;
+    height: 3em;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.introText button:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+/* #quizlist {
+    background-color: darkgoldenrod; padding: 4px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40px; bottom: 17.5%; position: absolute; color: aliceblue; border-radius: 10px; border: 4px black;
+} */
 
 .listItem {
     cursor: pointer;
-    padding: 10px
+    padding: 10px;
+    background-color: var(--backgroundGreen);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    margin: 0.25em;
+    justify-content: center;
+    gap:10vw;
+    transition: 0.3s;
 }
 
 .listItem:hover {
-    color: #feb642
+    background-color: var(--opacityWhite);
+    color: black;
 }
+
+.listItem .text{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* .listItem:hover {
+    color: #feb642
+} */
+
