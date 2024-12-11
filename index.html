@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="viewBox">
+
         <!-- navigation -->
         <div class="topNav">
             <h1>Quizpage</h1>
@@ -23,24 +24,29 @@
 
             <!-- list of quizzes -->
             <div class="quizList" id="quizlist">
+                <div class="listItem" id="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
                 <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
                 <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
                 <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>
-                
+                <div class="listItem"><div class="text">Oorlog</div><div class="icon"><span class="material-symbols-outlined">forward</span></div></div>  
             </div>
         </div>
 
-        
         <!-- TODO questions -->
-        <section id="questions" style="display: none;">
-        <input type="text" placeholder="Antwoord" id="answerbox">
-        <link rel="manifest" href="manifest.json">
-        <button id="nextquestion">Volgende Vraag</button>
-        <input type="file" id="fileInput" accept=".txt">
-        <button id="loadQuestions">Laad Vragen</button>
-        <div id="questionsContainer"></div>
+        <div id="quizContainer">
+            <div class="questionContainer">
+                <section id="questions">
+                    <p>Lorem Ipsum question</p>
+            </div>
+            <div class="answerContainer">
+                <input type="text" placeholder="Antwoord" id="answerbox">
+                <link rel="manifest" href="manifest.json">
+            </div>
+            <div class="navContainer">
+                <button id="previousQuestion">Terug</button>
+                <button id="nextQuestion">Volgende</button>
+            </div>
+        </div>
     </div>
 </section>
 </body>

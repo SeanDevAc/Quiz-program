@@ -19,8 +19,9 @@ body {
     align-items: center;
     background-image: url('img/background.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top right;
     background-size: cover;
+    position:absolute;
 }
 
 .viewBox{
