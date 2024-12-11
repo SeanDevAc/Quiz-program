@@ -161,3 +161,8 @@ h1{
     color: #feb642
 } */
 
+#resultContainer {
+    font-size: 40px;
+    color: white;
+    margin: 200;
+}
